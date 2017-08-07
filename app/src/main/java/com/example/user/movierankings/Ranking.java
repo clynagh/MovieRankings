@@ -15,4 +15,8 @@ public class Ranking {
     public Movie getRanking(int ranking) {
         return rankings[ranking];
     }
+
+    public void setRanking(Movie ranking) {
+        rankings[9] = ranking;
+    }
 }

@@ -35,13 +35,18 @@ public class RankingTest {
         assertEquals("Title: The Shawshank Redemption, Genre: Drama, Ranking: 1", rankings.getRanking(0).toString());
     }
 
-//    @Test
-//    public void testEighthInArray(){
-//        assertEquals("Title: The Lord of the Rings: Return of the King, Genre: Fantasy, Ranking: 8", ranking[7].toString());
-//    }
+    @Test
+    public void testEighthInArray(){
+        Ranking rankings = new Ranking(moviesToPassIn);
+        assertEquals("Title: The Lord of the Rings: Return of the King, Genre: Fantasy, Ranking: 8", rankings.getRanking(7).toString());
+    }
 
-//    @Test
-//    public void testGetRanking(){
-////        assertEquals("Title: Pulp Fiction, Genre: Drama, Ranking: 7", );
-//    }
+    @Test
+    public void testAddToEndOfArray(){
+        Ranking rankings = new Ranking(moviesToPassIn);
+        movie10 = new Movie("Forrest Gump", "Drama", 10);
+        rankings.setRanking(movie10);
+        assertEquals("Title: Forrest Gump, Genre: Drama, Ranking: 10", rankings.getRanking(9).toString());
+    }
+
 }
