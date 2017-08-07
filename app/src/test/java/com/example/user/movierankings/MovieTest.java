@@ -40,9 +40,15 @@ public class MovieTest {
     }
 
     @Test
-    public  void testSetMovieGenre(){
+    public void testSetMovieGenre(){
         movie.setGenre("Crime");
         assertEquals("Crime", movie.getMovieGenre());
+    }
+
+    @Test
+    public void testSetMovieRanking(){
+        movie.setRanking(1);
+        assertEquals(1, movie.getRanking());
     }
 
 }
