@@ -51,4 +51,8 @@ public class MovieTest {
         assertEquals(1, movie.getRanking());
     }
 
+    @Test
+    public void testToString(){
+        assertEquals("Title: The Shawshank Redemption, Genre: Drama, Ranking: 1", movie.toString());
+    }
 }
