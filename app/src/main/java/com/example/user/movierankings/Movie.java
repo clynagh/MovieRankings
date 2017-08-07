@@ -45,4 +45,6 @@ public class Movie {
     public String toString(){
         return "Title: " + this.title + ", Genre: " + this.genre + ", Ranking: " + this.ranking;
     }
+
+
 }
