@@ -15,7 +15,7 @@ public class MovieTest {
 
     @Before
     public void before(){
-        movie = new Movie("The Shawshank Redemption", "Drama");
+        movie = new Movie("The Shawshank Redemption", "Drama", 1);
     }
 
     @Test
@@ -26,6 +26,11 @@ public class MovieTest {
     @Test
     public void testGetMovieGenre(){
         assertEquals("Drama", movie.getMovieGenre());
+    }
+
+    @Test
+    public void testGetMovieRanking(){
+        assertEquals(1, movie.getRanking());
     }
 
     @Test

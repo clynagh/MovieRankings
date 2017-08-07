@@ -8,25 +8,32 @@ public class Movie {
 
     private String title;
     private String genre;
+    private int ranking;
 
-    public Movie(String title, String genre){
+    public Movie(String title, String genre, int ranking){
         this.title = title;
         this.genre = genre;
+        this.ranking = ranking;
     }
 
     public String getTitle() {
         return title;
     }
 
-    public String getMovieGenre() {
-        return genre;
-    }
 
     public void setTitle(String title) {
         this.title = title;
     }
 
+    public String getMovieGenre() {
+        return genre;
+    }
+
     public void setGenre(String genre) {
         this.genre = genre;
+    }
+
+    public int getRanking() {
+        return ranking;
     }
 }
