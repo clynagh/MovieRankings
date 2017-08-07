@@ -19,13 +19,19 @@ public class MovieTest {
     }
 
     @Test
-    public void testMovieTitle(){
+    public void testGetMovieTitle(){
         assertEquals("The Shawshank Redemption", movie.getTitle());
     }
 
     @Test
-    public void testMovieGenre(){
+    public void testGetMovieGenre(){
         assertEquals("Drama", movie.getMovieGenre());
+    }
+
+    @Test
+    public void testSetMovieTitle(){
+        movie.setTitle("The Godfather");
+        assertEquals("The Godfather", movie.getTitle());
     }
 
 }

@@ -21,4 +21,8 @@ public class Movie {
     public String getMovieGenre() {
         return genre;
     }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
 }
